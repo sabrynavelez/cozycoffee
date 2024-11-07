@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewed Awakening</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
+
+  <!--Google Font Syne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+  <!--Google Font Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!-- Main Image Section -->
+  <div class="home-header overlay">
+    <nav class="navbar navbar-expand-lg">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="merch.html">Merch</a>
+        <a class="nav-link" href="events.html">Events</a>
+      </div>
+    </nav>
+    <h1>Brewed <br> Awakening</h1>
+  </div>
+
+  <!-- Order Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="customer-name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="customer-name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="pickup-time" class="form-label">Pick Up Time</label>
+              <input type="time" class="form-control" id="pickup-time" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="coffeeType" class="form-label">Select Coffee Type</label>
+              <select class="form-select" id="coffeeType">
+                <option>Choose One</option>
+                <option>Flat White | $4.80</option>
+                <option>Latte | $4.75</option>
+                <option>Cappuccino | $4.50</option>
+                <option>Iced Coffee | $3.50</option>
+                <option>Mocha | $5.00</option>
+                <option>Chai Latte | $3.50</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="size" class="form-label">Drink Size</label>
+              <select class="form-select" id="size">
+                <option>Choose One</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="syrup" class="form-label">Syrups</label>
+              <select class="form-select" id="syrup">
+                <option>Choose One</option>
+                <option>Vanilla</option>
+                <option>Caramel</option>
+                <option>Mocha</option>
+                <option>Pumpkin</option>
+                <option>Blueberry</option>
+                <option>Toffee</option>
+                <option>Coconut</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="milk" class="form-label">Milk Substitute</label>
+              <select class="form-select" id="milk">
+                <option>Choose One</option>
+                <option>Whole Milk</option>
+                <option>Lactose Free</option>
+                <option>Oat Milk</option>
+                <option>Soy Milk</option>
+                <option>Coconut Milk</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coffee Section -->
+  <section class="row row-content align-items-center">
+    <div class="col">
+      <div class="d-flex">
+        <div class="align-self-center">
+          <h3>Awaken Your Senses, One Cup at a Time.</h3>
+          <p class="d-none d-sm-block">
+            Welcome to Brewed Awakening, where every cup tells a story and every visit feels like coming home. Nestled in
+            the heart of the city, our café offers a warm, inviting escape from the hustle and bustle, with the rich aroma
+            of freshly brewed coffee, comforting pastries, and cozy nooks perfect for unwinding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Half Image, Half Text Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Image Column -->
+      <div class="col-md-6">
+        <img src="images/shop.jpg" alt="Cozy Coffee Image" class="img-fluid w-100 rounded">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <h2 class="half-section-title">Find Your Moment, Brewed Just Right.</h2>
+        <p>
+          Experience the rich warmth and inviting atmosphere of Brewed Awakening. Whether you're unwinding with a good book,
+          catching up with friends, or fueling your day, we’ve got something to awaken your senses.
+        </p>
+        <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#orderModal">Place an Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section 
+        <section id="testimonials" class="container my-5">
+            <h2 class="text-center mb-4">What Our Customers Say</h2>
+    
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+  
+                Testimonial 1 
+                    <div class="carousel-item active">
+                        <div class="testimonial text-center">
+                            <p class="quote">"The best coffee experience I've ever had. The ambiance is perfect, and the service is top-notch!"</p>
+                            <h5>- Sarah D.</h5>
+                        </div>
+                    </div>
+  
+                Testimonial 2 
+                    <div class="carousel-item">
+                        <div class="testimonial text-center">
+                            <p class="quote">"Amazing place to work and relax. Great coffee and a wonderful staff. Highly recommend!"</p>
+                            <h5>- James K.</h5>
+                        </div>
+                    </div>
+  
+                Testimonial 3
+                    <div class="carousel-item">
+                        <div class="testimonial text-center">
+                            <p class="quote">"The coffee is fantastic, and the atmosphere is cozy and inviting. A must-visit for coffee lovers!"</p>
+                            <h5>- Emily R.</h5>
+                        </div>
+                    </div>
+
+                 Testimonial 4
+                    <div class="carousel-item">
+                        <div class="testimonial text-center">
+                            <p class="quote">"We had our annual Christmas party here and WOW it was amazing! The service was outstanding and the price was unbeatable!"</p>
+                            <h5>- Max Q.</h5>
+                        </div>
+                    </div>
+  
+            </div>
+  
+     Carousel Controls
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    -->
+
+   <br><br><br>
+
+  <!-- Favorites Section -->
+  <div class="container my-5">
+    <h2 class="section-title">Go-to Drinks</h2>
+    <div class="row">
+      <!-- Drink Item 1 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/latte.jpg" class="card-img-top fixed-image" alt="Latte">
+          <div class="card-body">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">A smooth blend of espresso and steamed milk.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Drink Item 2 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/iced.jpg" class="card-img-top fixed-image" alt="Iced Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Iced Coffee</h5>
+            <p class="card-text">Ask about our flavor of the month. You won’t want to miss it!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Drink Item 3 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/matcha.jpg" class="card-img-top fixed-image" alt="Matcha">
+          <div class="card-body">
+            <h5 class="card-title">Matcha</h5>
+            <p class="card-text">Savor the vibrant, earthy taste of our premium matcha.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Go-to Meals Section -->
+  <div class="container my-5">
+    <h2 class="section-title">Go-to Meals</h2>
+    <div class="row">
+      <!-- Meal Item 1 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/toast.jpg" class="card-img-top fixed-image" alt="Avocado Toast">
+          <div class="card-body">
+            <h5 class="card-title">Avocado Toast</h5>
+            <p class="card-text">Smashed avocado on toasted sourdough.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Meal Item 2 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/burrito.jpg" class="card-img-top fixed-image" alt="Vegan Burrito">
+          <div class="card-body">
+            <h5 class="card-title">Vegan Burrito</h5>
+            <p class="card-text">Filled with scrambled tofu, veggies, and black beans.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Meal Item 3 -->
+      <div class="col-md-4">
+        <div class="card fixed-size-card">
+          <img src="images/salmon.jpg" class="card-img-top fixed-image" alt="Smoked Salmon Bagel">
+          <div class="card-body">
+            <h5 class="card-title">Smoked Salmon Bagel</h5>
+            <p class="card-text">Bagel topped with cream cheese and smoked salmon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div>
+            <h2>Brewed Awakening</h2>
+            <h3>Open | Everyday 7am - 9pm</h3>
+        </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript plugins -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

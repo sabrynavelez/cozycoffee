@@ -1,0 +1,378 @@
+/* General Styles */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+h3{
+  font-family: "Syne", sans-serif;
+}
+
+h2{
+  font-family: "Syne", sans-serif;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  font-family: "Syne", sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd; /* Highlight color on hover */
+}
+
+/* Header Sections */
+.home-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../images/three.jpg') center/cover no-repeat;
+  font-family: "Syne", sans-serif;
+}
+
+.about-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../images/img5.jpg') center/cover no-repeat;
+  font-family: "Syne", sans-serif;
+}
+
+.menu-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../images/making.jpg') center/cover no-repeat;
+  font-family: "Syne", sans-serif;
+}
+
+.merch-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../images/merch2.jpg') center/cover no-repeat;
+  font-family: "Syne", sans-serif;
+}
+
+.event-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../images/making2.jpg') center/cover no-repeat;
+  font-family: "Syne", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 70px;
+  color: white;
+  opacity: 80%;
+  font-style: italic;
+  font-family: "Syne", sans-serif;
+}
+
+/* Place an Order Modal Styles */
+.modal-header {
+  background-color: #3a5f47;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+}
+
+.btn-primary{
+  background-color: #333;
+  color: white;
+  border: none;
+  font-family: "Syne", sans-serif;
+}
+
+.btn-primary:hover{
+  background-color: #3a5f47;
+  color: white;
+  font-family: "Syne", sans-serif;
+}
+
+/* Home CSS */
+.row-content {
+  padding: 50px 0;
+  min-height: 200px;
+}
+
+.row-content p {
+  text-align:  center;
+  padding-right: 240px;
+  padding-left: 240px;
+      
+}
+
+.row-content h3{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+/* About CSS */
+#about-section .col {
+  text-align: left;
+  padding-left: 32px;
+  padding-top: 50px;
+  padding-right: 200px;
+  
+  
+}
+
+#about-section h3 {
+  font-weight: bold;
+  color: #3a5f47;
+}
+
+#about-section p {
+  margin-left: 0; /* Ensures paragraph is aligned left */
+}
+
+/* FAQ Accordion Styles */
+.accordion-button {
+  background-color: #3a5f47; /* Cozy green color */
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem; /* Slightly larger padding for a more relaxed look */
+  border: 1px solid #3a5f47;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #2d4b3a; /* Darker green on hover */
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(58, 95, 71, 0.5); /* Subtle shadow for focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.accordion-item {
+  background-color: #fff; /* White background for the accordion items */
+  margin-bottom: 10px; /* Add space between each accordion item */
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card-like effect */
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0; /* Remove margin for the last item */
+}
+
+.accordion-body {
+  background-color: #f5f5f5; /* Light gray background for body */
+  color: #333;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.accordion-body p {
+  margin: 0; /* Remove extra margin from the paragraph */
+}
+
+/* Accordion Title Styles */
+.accordion-header {
+  padding: 0;
+}
+
+.accordion-header h2 {
+  margin: 0; /* Remove default margin from headers */
+}
+
+.accordion-header .accordion-button {
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.1rem;
+}
+
+.faqs .section-title {
+  font-size: 2rem;
+  color: #3a5f47; /* Cozy green color */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.accordion {
+  max-width: 800px; /* Limit the width of the accordion */
+  margin: 0 auto; /* Center the accordion */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  color: white;
+}
+
+
+/* Menu CSS */
+.menu-section {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.menu-section h3{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.menu-section .row{
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu-item {
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 180px;
+}
+
+.menu-item h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-family: "Syne", sans-serif;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-family: "Inter", sans-serif;
+
+}
+
+.menu-item .price {
+  font-size: 1.2rem;
+  color: #2d4b3a;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+/* Merch CSS */
+#merch-h2 {
+  color: #3a5f47;
+}
+
+/* Events CSS */
+#event-h2 {
+  color: #3a5f47;
+}
+
+/* Cards for favorites, go-to, merch and meet the team  */
+.section-title {
+  font-size: 2rem;
+  color: #3a5f47;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  
+}
+
+.fixed-size-card {
+  width: 18rem; 
+  height: 22rem; 
+  overflow: hidden; /* Hide overflow to ensure consistency */
+}
+
+.fixed-image {
+  width: 100%; 
+  height: 12rem; 
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+/* Tab links customization */
+
+.nav-item{
+  font-family: "Syne", sans-serif;
+} 
+
+.nav-tabs .nav-link {
+  color: #555;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-content .p-4 {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Half Sections on the Home, About and Menu page */
+.half-section-title {
+  color: #3a5f47;
+}
+
+/*
+#testimonials {
+  background-color: #333; /* Light background for the testimonials section 
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+}
+
+.quote {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Invert the icon colors to make them visible 
+}
+*/
+
+
+/* Footer Section */
+footer {
+  background: #3a5f47 ;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Brewed Awakening</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
+
+  <!--Google Font Syne-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+  <!--Google Font Inter-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Main Image Section -->
+  <div class="event-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="merch.html">Merch</a>
+        <a class="nav-link" href="events.html">Events</a>
+      </div>
+    </nav>
+    <h1>Book An <br> Event Today</h1>
+  </div>
+
+  <br><br>
+
+  <div class="container my-5">
+    <h2 id="event-h2" class="text-center mb-4">Host Your Next Event at Our Coffee Shop!</h2>
+
+    <br>
+
+    <!-- Tab Navigation -->
+    <ul class="nav nav-tabs" id="eventTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="private-parties-tab" data-bs-toggle="tab" href="#private-parties" role="tab"
+          aria-controls="private-parties" aria-selected="true">Private Parties</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="corporate-meetings-tab" data-bs-toggle="tab" href="#corporate-meetings" role="tab"
+          aria-controls="corporate-meetings" aria-selected="false">Corporate Meetings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="community-events-tab" data-bs-toggle="tab" href="#community-events" role="tab"
+          aria-controls="community-events" aria-selected="false">Community Events</a>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="eventTabContent">
+      <!-- Private Parties Tab -->
+      <div class="tab-pane fade show active" id="private-parties" role="tabpanel" aria-labelledby="private-parties-tab">
+        <div class="p-4">
+          <h3>Private Parties</h3>
+          <p>Host a cozy, intimate gathering with friends and family. Our coffee shop is perfect for birthdays,
+            anniversaries, and other small celebrations. We provide customizable decor and a special menu to make
+            your event memorable.</p>
+          <p><strong>Capacity:</strong> Up to 30 guests</p>
+        </div>
+      </div>
+
+      <!-- Corporate Meetings Tab -->
+      <div class="tab-pane fade" id="corporate-meetings" role="tabpanel" aria-labelledby="corporate-meetings-tab">
+        <div class="p-4">
+          <h3>Corporate Meetings</h3>
+          <p>Looking for a unique and relaxing space for your next team meeting? Our coffee shop offers a quiet
+            environment with high-speed Wi-Fi, projector facilities, and premium coffee to keep everyone focused and
+            refreshed.</p>
+          <p><strong>Capacity:</strong> Up to 20 guests</p>
+        </div>
+      </div>
+
+      <!-- Community Events Tab -->
+      <div class="tab-pane fade" id="community-events" role="tabpanel" aria-labelledby="community-events-tab">
+        <div class="p-4">
+          <h3>Community Events</h3>
+          <p>We love supporting our local community! Whether it's an open mic night, book reading, or art showcase,
+            our coffee shop is the ideal spot for community gatherings. Join us to make meaningful connections.</p>
+          <p><strong>Capacity:</strong> Up to 40 guests</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+    <!-- Centered Image Carousel -->
+        <div class="container d-flex justify-content-center mt-4">
+            <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 600px;">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="images/img1.jpg" class="d-block w-100" alt="Event Image 1" style="height: 300px; object-fit: cover;">
+                        </div>
+                    <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="images/img2.jpg" class="d-block w-100" alt="Event Image 2" style="height: 300px; object-fit: cover;">
+                        </div>
+                    <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="images/img3.jpg" class="d-block w-100" alt="Event Image 3" style="height: 300px; object-fit: cover;">
+                        </div>
+                    <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <img src="images/img5.jpg" class="d-block w-100" alt="Event Image 4" style="height: 300px; object-fit: cover;">
+                        </div>
+                </div>
+  
+                    <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+            </div>
+        </div>
+  
+
+  <br><br>
+
+  <div class="container my-5">
+    <h3>Don't Wait, Book Now</h3>
+    <form id="bookingForm">
+      <!-- Name -->
+      <div class="col-md-8">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+      </div>
+      <br>
+
+      <!-- Email -->
+      <div class="col-md-8">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <br>
+
+      <!-- Phone Number -->
+      <div class="col-md-8">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+      </div>
+      <br>
+
+      <!-- Event Type -->
+      <div class="col-md-8">
+        <label for="eventType">Type of Event</label>
+        <select class="form-control" id="eventType" required>
+          <option value="" disabled selected>Select an event type</option>
+          <option value="Private Party">Private Party</option>
+          <option value="Corporate Meeting">Corporate Meeting</option>
+          <option value="Community Event">Community Event</option>
+        </select>
+      </div>
+      <br>
+
+      <!-- Event Date -->
+      <div class="col-md-8">
+        <label for="date">Preferred Date</label>
+        <input type="date" class="form-control" id="date" required>
+      </div>
+      <br>
+
+      <!-- Number of Guests -->
+      <div class="col-md-8">
+        <label for="guests">Number of Guests</label>
+        <input type="number" class="form-control" id="guests" placeholder="Enter number of guests" required>
+      </div>
+      <br>
+
+      <!-- Additional Details -->
+      <div class="col-md-8">
+        <label for="details">Additional Details</label>
+        <textarea class="form-control" id="details" rows="3" placeholder="Provide any additional details or requests"></textarea>
+      </div>
+      <br>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div>
+            <h2>Brewed Awakening</h2>
+            <h3>Open | Everyday 7am - 9pm</h3>
+        </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript plugins -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  
+</body>
+</html>
