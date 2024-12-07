@@ -1,3 +1,4 @@
-# cozycoffee
-# coffee-shop-website
-# This website is a mock Coffee Shop website created using HTML, CSS, and Bootstrap. There are several pages including a menu, merchandise, and a mock order button with options. 
+# Brewed Awakening - Mock coffee shop website.
+This mock coffee shop website is designed to simulate the experience of browsing a coffee shop's offerings online. Built using HTML, CSS, and Bootstrap, the website includes several pages such as a Menu to display the shop’s drinks, a Merchandise page showcasing items for sale, and an Order button that is functioning to an extent. These technologies were chosen for their ease of use, responsiveness, and flexibility in building modern, interactive web pages. One challenge faced during development was ensuring the website was fully responsive across different devices, which was addressed using Bootstrap’s grid system. I am still having trouble making the page responsive on smaller devices. In the future, I hope to make the website more responsive on all devices, as well as, implement more advanced features like a working shopping cart that can be used to order food, drink, and merchandise. 
+
+The project was published using FIREBASE || https://bacoffeecafe11724.web.app/
